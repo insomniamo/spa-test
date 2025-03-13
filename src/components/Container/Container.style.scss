@@ -1,0 +1,13 @@
+@import "../../base/styles/variables.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    margin-inline: auto;
+    
+
+    max-width: $max-container-width;
+
+    min-height: 100dvh;
+}

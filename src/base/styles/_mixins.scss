@@ -1,0 +1,54 @@
+@mixin text-huge{
+    margin: 0;
+
+    font-size: $font-size-huge;
+    line-height: $line-height-regular;
+    letter-spacing: $font-size-huge * ($letter-spacing-lil / 100);
+
+    font-weight: $font-weight-regular;
+}
+
+@mixin text-big{
+    margin: 0;
+
+    font-size: $font-size-big;
+    line-height: $line-height-mini;
+
+    font-weight: $font-weight-regular;
+}
+
+@mixin text-regular{
+    margin: 0;
+
+    font-size: $font-size-regular;
+    line-height: $line-height-nano;
+
+    font-weight: $font-weight-light;
+}
+
+@mixin text-little{
+    margin: 0;
+
+    font-size: $font-size-mini;
+    line-height: $line-height-regular;
+
+    font-weight: $font-weight-bold;
+}
+
+@mixin text-mini{
+    margin: 0;
+
+    font-size: $font-size-mini;
+    line-height: $line-height-regular;
+
+    font-weight: $font-weight-light;
+}
+
+@mixin text-nano{
+    margin: 0;
+
+    font-size: $font-size-nano;
+    line-height: $line-height-regular;
+
+    font-weight: $font-weight-light;
+}

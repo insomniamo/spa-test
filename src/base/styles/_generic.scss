@@ -1,0 +1,44 @@
+
+* {
+  box-sizing: border-box;
+
+  -webkit-tap-highlight-color: transparent;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+  color: $black;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+a{
+  @include text-nano;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1{
+  @include text-huge;
+}
+
+h2{
+  @include text-big;
+}
+
+h3{
+  @include text-little;
+}
+
+p{
+  @include text-regular;
+}
+
+data{
+  @include text-mini;
+}

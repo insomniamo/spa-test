@@ -1,0 +1,49 @@
+@import "@/base/styles/variables.scss";
+
+.footer{
+    display: flex;
+    flex-direction: column;
+
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+    font-size: $font-size-nano;
+    line-height: $line-height-regular;
+    font-weight: $font-weight-light;
+
+    background-color: $white;
+
+    &__wrapper{
+        height: $footer-height;
+        padding-top: 40px;
+        padding-inline: 60.5px 59.5px;
+    }
+
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 8.29px;
+        margin-top: 14.24px;
+        margin-bottom: 24.78px;
+    }
+
+    &__logo-text{
+        height: 14.24px;
+    }
+
+    &__logo-image{
+        height: 24.48px;
+        width: 84px;
+    }
+
+    &__copyright{
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        height: 14px;
+    }
+}

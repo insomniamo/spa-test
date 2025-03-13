@@ -1,0 +1,27 @@
+@import "../../base/styles/variables.scss";
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20.02;
+    color: $blue-ribbon;
+    z-index: -1;
+    
+    &__icon {
+        width: 35.98px;
+        height: 35.98px;
+        animation: spin 1s linear infinite;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

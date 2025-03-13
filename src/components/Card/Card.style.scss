@@ -1,0 +1,64 @@
+@import "@/base/styles/variables.scss";
+
+.card{
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+    
+    &:not(:first-child) {
+        padding-top: 8px;
+    }
+
+    &:not(:last-child) {
+        padding-bottom: 8px;
+        border-bottom: 1px solid $sirocco;
+    }
+
+    &__image-wrapper {
+        min-height: 74px;
+        min-width: 99px;
+        max-height: 74px;
+        max-width: 99px;
+        margin-top: 25px;
+    
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
+    
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__description {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        
+        text-overflow: ellipsis;
+        min-height: 110px;
+        max-height: 110px;
+    }
+
+    &__title{
+        height: 17px;
+        color: $blue-ribbon;
+    }
+
+    &__date{
+        color: $sirocco-gray;
+    }
+}

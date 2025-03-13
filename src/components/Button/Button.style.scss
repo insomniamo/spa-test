@@ -1,0 +1,33 @@
+@import "../../base/styles/variables.scss";
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border: none;
+    border-radius: 0;
+    padding: 0;
+
+    color: $black;
+    background-color: transparent;
+    
+    transition: background .125s, color .125s, opacity .125s;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &__icon-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+    }
+
+    &--icon{
+        .button__icon-wrapper {
+            width: 20px;
+        }
+    }
+}

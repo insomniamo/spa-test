@@ -1,0 +1,23 @@
+@import "@/base/styles/variables.scss";
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    padding-inline: $gap-container;
+    margin-bottom: 11px;
+
+    height: $header-height;
+    background-color: $white;
+    border-bottom: solid 1px $sirocco;
+
+    > *:first-child {
+        position: absolute;
+        left: 20px;
+    }
+}
